@@ -2,7 +2,7 @@
 
 ![Internet Speed Analysis Banner](banner.png)
 
-# 🌐 Internet Speed Analysis — Enhanced Edition
+# 🌐 Internet Speed Analysis
 
 *A portfolio-grade end-to-end data science project: EDA · Feature Analysis · Machine Learning · Interactive Dashboard*
 
@@ -50,7 +50,7 @@ The project delivers:
 
 | Deliverable | Description |
 |---|---|
-| `Internet_Speed_Project_Enhanced.ipynb` | A fully executed Jupyter Notebook with 8 clearly-labeled sections |
+| `Internet_Speed_Project.ipynb` | A fully executed Jupyter Notebook with 8 clearly-labeled sections |
 | `dashboard.html` | A self-contained interactive 6-chart Plotly dashboard, viewable offline |
 | `best_model.pkl` | The serialised Gradient Boosting Regressor (R² = 0.9997 on test set) |
 | `pairplot.png` | A seaborn multivariate pairplot coloured by connection type |
@@ -118,7 +118,7 @@ The project delivers:
 ```
 Internet-Speed-Analysis/
 │
-├── 📓 Internet_Speed_Project_Enhanced.ipynb  ← Main analysis notebook (6.98 MB, 39 cells)
+├── 📓 Internet_Speed_Project.ipynb            ← Main analysis notebook (6.98 MB, 39 cells)
 │
 ├── 🌐 dashboard.html                          ← Standalone Plotly dashboard (204 KB)
 │
@@ -155,7 +155,7 @@ Once you have a screenshot ready, save it as `screenshots/dashboard_preview.png`
 
 ## 4. Notebook Walkthrough (All 8 Sections)
 
-The notebook `Internet_Speed_Project_Enhanced.ipynb` is structured into **8 sequential sections**, each introduced by a descriptive Markdown cell. All 30 code cells execute cleanly from top to bottom without errors.
+The notebook `Internet_Speed_Project.ipynb` is structured into **8 sequential sections**, each introduced by a descriptive Markdown cell. All 30 code cells execute cleanly from top to bottom without errors.
 
 ---
 
@@ -518,8 +518,8 @@ The **Gradient Boosting Regressor** was identified as the best model by highest 
 
 ### Step 1 — Clone the Repository
 ```bash
-git clone https://github.com/Zeyad-Abderahman/Internet-Speed-Analysis.git
-cd Internet-Speed-Analysis
+git clone https://github.com/Zeyad-Abderahman/Internet-Speed-Analysis-2.git
+cd Internet-Speed-Analysis-2
 ```
 
 ### Step 2 — Install Dependencies
@@ -541,7 +541,7 @@ nbconvert
 statsmodels
 ```
 
-> ⚠️ **Before running the notebook**, open `Internet_Speed_Project_Enhanced.ipynb` and update the `DATA_PATH` constant at the top of **Section 1** to point to your own local copy of the CSV file:
+> ⚠️ **Before running the notebook**, open `Internet_Speed_Project.ipynb` and update the `DATA_PATH` constant at the top of **Section 1** to point to your own local copy of the CSV file:
 > ```python
 > DATA_PATH = r"C:\your\local\path\Internet Speed.csv"
 > ```
@@ -550,7 +550,7 @@ statsmodels
 
 ### Step 3 — Open the Notebook
 ```bash
-jupyter notebook Internet_Speed_Project_Enhanced.ipynb
+jupyter notebook Internet_Speed_Project.ipynb
 ```
 Run all cells from top to bottom (`Kernel → Restart & Run All`).
 
@@ -558,8 +558,8 @@ Run all cells from top to bottom (`Kernel → Restart & Run All`).
 ```bash
 jupyter nbconvert --to notebook --execute \
   --ExecutePreprocessor.timeout=300 \
-  Internet_Speed_Project_Enhanced.ipynb \
-  --output Internet_Speed_Project_Enhanced.ipynb
+  Internet_Speed_Project.ipynb \
+  --output Internet_Speed_Project.ipynb
 ```
 
 ### Step 5 — View the Dashboard
@@ -615,5 +615,6 @@ This project is released under the **MIT License** — free to use, modify, and 
 
 *Developed by **Zeyad Abderahman** — Data Science Portfolio Project*
 
+[![GitHub](https://img.shields.io/badge/GitHub-Zeyad--Abderahman-181717?style=flat-square&logo=github)](https://github.com/Zeyad-Abderahman)
 
 </div>
